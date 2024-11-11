@@ -1,7 +1,6 @@
 package guru.springframework;
 
-public class Dollar {
-    int amount;
+public class Dollar extends Money{
     public Dollar(int amount) {
         this.amount = amount;
     }
@@ -10,8 +9,5 @@ public class Dollar {
         return new Dollar(amount * multiplier);
     }
 
-    public boolean equals(Object object) {
-        Dollar dollarCopy = (Dollar) object;
-        return amount == dollarCopy.amount;
-    }
+
 }
